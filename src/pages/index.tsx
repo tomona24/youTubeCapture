@@ -2,15 +2,16 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Button } from '../components/atoms/Button';
+import Main from "src/components/organisms/Main";
+
 
 const Home: NextPage = () => {
   return (
     <main>
-      <div className='h-[100vh] flex flex-col justify-center align-middle text-center'>
-        Hello World!
-        <Button>あいうえお</Button>
-      </div>
+        動画日記ジェネレーター
+        <Main />
+
+        
     </main>
   );
 };

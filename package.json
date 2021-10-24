@@ -9,8 +9,8 @@
     "lint": "next lint --dir src",
     "lint:fix": "eslint src --ext .js,jsx,.ts,.tsx --fix",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
-    "css:dev": "TAILWIND_MODE=watch postcss src/styles/tailwind.css -o src/styles/globals.css --watch",
-    "css:build": "postcss src/styles/tailwind.css -o src/styles/globals.css"
+    "css:dev": "AILWIND_MODE=watch postcss -i src/styles/tailwind.css -o src/styles/globals.css --watch",
+    "css:build": "postcss -i src/styles/tailwind.css -o src/styles/globals.css"
   },
   "dependencies": {
     "next": "^11.1.2",
