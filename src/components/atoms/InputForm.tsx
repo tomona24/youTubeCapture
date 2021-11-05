@@ -1,4 +1,9 @@
-export const InputForm = ( props ) => {
+type InputFormProps = {
+    value: string;
+    handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+export const InputForm = ( props : InputFormProps ) => {
     const { value, handleChange } = props;
     return (
         <input value={value} 

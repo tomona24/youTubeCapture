@@ -3,10 +3,14 @@ import React, { useState } from "react";
 import { Button } from '../atoms/Button';
 import { InputForm } from "../atoms/InputForm";
 
-const Form = ( props ) => {
+type FormProps = {
+  setVideoId: (id: string) => void;
+}
+
+const Form = ( props: FormProps ) => {
     const { setVideoId } = props;
     const [ value, setValue ] = useState('');
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setValue(e.target.value);
     };
 
